@@ -1,0 +1,30 @@
+.heroSection {
+  width: 100vw;
+  height: 270px;
+  background-color: var(--color-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroSubSection {
+  width: 799px;
+  height: 212px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.heroText {
+  font-weight: 500;
+  font-size: 32px;
+  text-align: center;
+  color: var(--color-white);
+  /* width: 556px; */
+  height: 100px;
+}
+
+.heroImage {
+  width: 212px;
+  height: 212px;
+}

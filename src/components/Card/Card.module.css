@@ -1,0 +1,39 @@
+.cardBody {
+  height: 232px;
+  width: 159px;
+}
+
+.card {
+  height: 205px;
+  width: 159px;
+  border-radius: 10px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  background-color: var(--color-white);
+}
+
+.cardImage {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.follower {
+  background-color: var(--color-black);
+  width: 71px;
+  height: 23px;
+  border-radius: 10px;
+  padding: 4px 8px 4px 8px;
+  margin-left: 5px;
+  margin-top: -1px;
+}
+
+.follower p {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.cardTitle {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 400;
+}

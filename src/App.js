@@ -1,7 +1,7 @@
 import "./App.css";
-import Card from "./components/Card/Card";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
+import TobAlbums from "./components/TopAlbums/TobAlbums";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <Navbar />
       <Hero />
       <div className="card-section">
-        <Card />
+        <TobAlbums />
       </div>
     </div>
   );

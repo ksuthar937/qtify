@@ -1,24 +1,35 @@
-import styles from "./Card.module.css";
-// import cardImage from "../../assets/card-image.png";
+import { Chip } from "@mui/material";
 
-function Card({ image, follows }) {
-  return (
-    <div className={styles.cardBody}>
-      <div className={styles.card}>
-        <img
-          src={image}
-          alt="card"
-          width={159}
-          height={170}
-          className={styles.cardImage}
-        />
-        <div className={styles.follower}>
-          <p>{follows} Follows</p>
-        </div>
-      </div>
-      <p className={styles.cardTitle}>New Bollywood</p>
-    </div>
-  );
+import styles from "./Card.module.css";
+
+function Card({ data, type }) {
+  const getCart = (type) => {
+    switch (type) {
+      case "album": {
+        const { image, follows, title } = data;
+        return (
+          <div className={styles.wrapper}>
+            <div className={styles.card}>
+              <img src={image} alt="album" />
+              <div className={styles.banner}>
+                <Chip
+                  className={styles.chip}
+                  label={`${follows} Follows`}
+                  size="small"
+                />
+              </div>
+            </div>
+            <div className={styles.title}>
+              <p>{title}</p>
+            </div>
+          </div>
+        );
+      }
+      default:
+        return <></>;
+    }
+  };
+  return getCart(type);
 }
 
 export default Card;

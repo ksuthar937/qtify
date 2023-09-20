@@ -1,41 +1,39 @@
-.cardBody {
-  height: 232px;
-  width: 159px;
+.wrapper {
+  width: 160px;
 }
 
 .card {
+  position: relative;
   height: 205px;
-  width: 159px;
+  width: 160px;
   border-radius: 10px;
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
+  overflow: hidden;
+}
+
+.card > img {
+  width: 100%;
+  height: 90%;
+}
+
+.banner {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 42px;
   background-color: var(--color-white);
-  margin-left: 6px;
-  margin-right: 6px;
+  display: flex;
+  align-items: center;
+  padding: 6px;
+
+  .chip {
+    background-color: var(--color-black);
+    color: var(--color-white);
+  }
 }
 
-.cardImage {
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-}
-
-.follower {
-  background-color: var(--color-black);
-  width: 82px;
-  height: 23px;
-  border-radius: 10px;
-  padding: 4px 8px 4px 8px;
-  margin-left: 5px;
-  margin-top: -1px;
-}
-
-.follower p {
-  font-size: 10px;
-  font-weight: 400;
-}
-
-.cardTitle {
-  margin-top: 5px;
-  font-size: 14px;
-  font-weight: 400;
+.title {
+  margin-top: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

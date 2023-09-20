@@ -16,11 +16,13 @@ function Section({ title, data }) {
       <div className={styles.header}>
         <h3>{title}</h3>
         <h4 className={styles.toggleText} onClick={handleToggle}>
-          {carouselToggle ? "Show All" : "Collapse All"}
+          {carouselToggle ? "Show all" : "Collapse"}
         </h4>
       </div>
       {!data.length ? (
-        <CircularProgress />
+        <div className={styles.loader}>
+          <CircularProgress />
+        </div>
       ) : (
         <div className={styles.cardWrapper}>
           {!carouselToggle ? (

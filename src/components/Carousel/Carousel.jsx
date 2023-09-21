@@ -31,7 +31,7 @@ function Carousel({ data, componentRender }) {
         <CarouselLeftNavigation />
         <CarouselRightNavigation />
         {data.map((item) => (
-          <SwiperSlide>{componentRender(item)}</SwiperSlide>
+          <SwiperSlide key={item.id}>{componentRender(item)}</SwiperSlide>
         ))}
       </Swiper>
     </div>

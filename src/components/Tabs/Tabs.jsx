@@ -45,7 +45,6 @@ export default function BasicTabs({ value, handleChange }) {
         <Tabs
           value={value}
           onChange={handleChange}
-          aria-label="basic tabs example"
           textColor="inherit"
           indicatorColor="secondary"
         >

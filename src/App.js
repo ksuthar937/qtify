@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Section from "./components/Section/Section";
 
 import styles from "./App.module.css";
+import FaqAccordion from "./components/FaqAccordion/FaqAccordion";
 
 function App() {
   const [topAlbums, setTopAlbums] = useState([]);
@@ -98,6 +99,8 @@ function App() {
           type="album"
           filteredDataValue={newAlbums}
         />
+        <hr className={styles.border} />
+
         <Section
           title="Songs"
           data={allSongs}
@@ -107,7 +110,9 @@ function App() {
           filteredData={filteredSongs}
           filteredDataValue={filteredSongs}
         />
+        <hr className={styles.border} />
       </div>
+      <FaqAccordion />
     </div>
   );
 }

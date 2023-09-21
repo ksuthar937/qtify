@@ -1,0 +1,11 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 100px;
+}
+
+.header {
+  text-align: center;
+  font-weight: 600;
+}

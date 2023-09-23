@@ -7,6 +7,7 @@ import Section from "./components/Section/Section";
 
 import styles from "./App.module.css";
 import FaqAccordion from "./components/FaqAccordion/FaqAccordion";
+import MusicPlayer from "./components/MusicPlayer/MusicPlayer";
 
 function App() {
   const [topAlbums, setTopAlbums] = useState([]);
@@ -84,7 +85,7 @@ function App() {
 
   return (
     <div>
-      <Navbar />
+      <Navbar data={[...topAlbums, ...newAlbums]} />
       <Hero />
       <div className={styles.sectionWrapper}>
         <Section
@@ -113,6 +114,7 @@ function App() {
         <hr className={styles.border} />
       </div>
       <FaqAccordion />
+      <MusicPlayer />
     </div>
   );
 }

@@ -3,11 +3,11 @@ import Logo from "../Logo/Logo";
 import Search from "../Search/Search";
 import styles from "./Navbar.module.css";
 
-function Navbar() {
+function Navbar({ data }) {
   return (
     <div className={styles.navbar}>
       <Logo />
-      <Search />
+      <Search data={data} />
       <Button children="Give Feedback" />
     </div>
   );
